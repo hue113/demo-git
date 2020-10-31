@@ -29,3 +29,15 @@
     Show changes of modified files (not committed yet)
         git diff    
     
+    
+03-Working directory, Staging area, Repository
+    Working Directory/Working Tree: the area where you are currently working/ untracked area of git 
+        GIT ADD: Add files from Working Tree to Stagging Area
+    Staging Area (Index): the area that git starts tracking and saving changes that occur in files.
+        GIT COMMIT: Commit files from Stagging Area to Repository
+        Git status: show what you have in staging area
+    Repository: store changes of commits log
+        Local Repository: everything in .git directory (all commits)
+        git ls-tree --full-tree -r HEAD
+        git log
+        gitk (open a GUI window that show all commits logs/history)
