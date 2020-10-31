@@ -1,0 +1,19 @@
+01-First commit
+    First time set up (only once):
+        git config --global user.email "huepham113@gmail.com"
+        git config --global user.name "Hue Pham"
+
+    Create git for project:
+        cd <project path>
+        git init
+
+    Add a file:
+        git add README.md
+
+    Check status:
+        git status
+            untracked file  (means newly created file)
+            modified        (means old file was modified)
+
+    Commit a file:
+        git commit -m 'Add README.md file'
