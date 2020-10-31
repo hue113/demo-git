@@ -17,3 +17,15 @@
 
     Commit a file:
         git commit -m 'Add README.md file'
+
+
+02-log, show, diff
+    Show commit logs/history (file, time, commit message)
+        git log
+    
+    Show commit content
+        git show <commit ID>
+
+    Show changes of modified files (not committed yet)
+        git diff    
+    
