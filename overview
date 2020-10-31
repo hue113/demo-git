@@ -41,3 +41,10 @@
         git ls-tree --full-tree -r HEAD
         git log
         gitk (open a GUI window that show all commits logs/history)
+
+
+04-checkout, reset
+    Delete changes in file in Working Tree (not in Staging Area)
+        git checkout --<filename>
+    Unstage a file (remove an added file in Staging Area, move it back to Working Tree)
+        git reset HEAD <filename>
