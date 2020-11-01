@@ -85,5 +85,21 @@
 08-gitignore file
     Specify files that Git should ignore (untrack)
     Should be node-modules because it's heavy and others can still npm install to run project 
+
+09-Github (remote repository)
+    Create a new remote repo on github.com
+    Copy remote repo link on Github
+    Add a new remote repo to local repositories:
+        git remote add origin <remote repo link>
+    Show list of remote repos:    
+        git remote -v
     
+    Push (first time):    
+        git push -u origin master
+    Push (not first time):
+        git push
+    
+    Alternatives to Github: GitLab, bitbucket
+
+
 
