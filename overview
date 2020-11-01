@@ -77,3 +77,13 @@
         git reset --mixed <to commit>
     Uncommit / Delete any difference in file totally
         git reset --hard <to commit>
+
+07-git revert
+    Delete old commit by adding a new commit and cancelling changes    
+        git revert <commit id>
+
+08-gitignore file
+    Specify files that Git should ignore (untrack)
+    Should be node-modules because it's heavy and others can still npm install to run project 
+    
+
