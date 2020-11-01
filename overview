@@ -122,3 +122,12 @@ Part B: WORKING IN TEAM (more than 1 people working in the same project)
 
     User A can download all updates/new changes of B's repository by running command:
         git pull
+
+12-Push a branch 
+    After cloning the repo (in lesson11), User A was assigned a task to create Horse.js 
+    What A needs to do:
+        Create and Checkout to a new branch:
+            git checkout -b <feature_branch>
+        Then, to push to git from that branch:
+            git push origin <branch_name>
+
