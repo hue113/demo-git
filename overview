@@ -102,4 +102,11 @@
     Alternatives to Github: GitLab, bitbucket
 
 
+10-Git credential
+    Ways to save git username and password:
+        git config --global credential.helper store
+        git config --global credential.helper "cache --timeout=18000"
+        git ssh / keychain
+
+
 
