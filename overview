@@ -44,7 +44,27 @@
 
 
 04-checkout, reset
-    Delete changes in file in Working Tree (not in Staging Area)
+    Delete changes in file in Working Tree (not in Staging Area):
         git checkout --<filename>
-    Unstage a file (remove an added file in Staging Area, move it back to Working Tree)
+    Unstage a file (remove an added file in Staging Area, move it back to Working Tree):
         git reset HEAD <filename>
+
+05-git branch, git merge
+    Create a new branch & checkout:
+        git checkout -b <branch-name>
+        Example: git checkout -b feature/dog-class
+    
+    Checkout only:
+        git checkout <branch-name>
+
+    Check all available branches
+        git branch 
+    
+    Merge committed file from a branch
+        A <-- B (merge committed file in B to A)
+            Example: master <-- feature/dog-class
+        git checkout A      (checkout A first)
+        git merge B         (From A: merge B to A)
+
+    Delete a branch (should keep Working Tree clean)
+        git branch -D <branch-name>
