@@ -1,3 +1,4 @@
+PART A: WORKING IN INDIVIDUAL
 01-First commit
     First time set up (only once):
         git config --global user.email "huepham113@gmail.com"
@@ -109,4 +110,15 @@
         git ssh / keychain
 
 
+Part B: WORKING IN TEAM (more than 1 people working in the same project)
+11-git clone, git pull
+    User A wants to clone/download User B's repository to A's computer
+    User A needs to do:
+        Copy repository's Clone/Download link (on B's github)
+        Download all commits to A's local repository by:
+            git clone <remote repo link>
+            (Then A will have the same git log history with B, and B is still the author of past commits (use 'git log' to check)
+            (only username is different)
 
+    User A can download all updates/new changes of B's repository by running command:
+        git pull
