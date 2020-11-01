@@ -68,3 +68,12 @@
 
     Delete a branch (should keep Working Tree clean)
         git branch -D <branch-name>
+
+
+06-git reset
+    Uncommit / Files moved back to Staging Area (green color):
+        git reset --soft <commit id>
+    Uncommit / Files moved back to Working Tree (red color):
+        git reset --mixed <to commit>
+    Uncommit / Delete any difference in file totally
+        git reset --hard <to commit>
