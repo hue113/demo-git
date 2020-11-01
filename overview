@@ -138,8 +138,27 @@ Part B: WORKING IN TEAM (more than 1 people working in the same project)
         (Pull Request status changes to Open)
     
     What B will do?
-        Review code changes on github: 
+        Review code changes on github (online): 
             clicking Pull Request tab --> Files Changed tab
             add review/comment if neccessary
         Merge to master
 
+14-Review Code
+    What B will do? (continue)
+    Review Code (2 ways):
+        1-Online Review: use github (lesson13)
+        2-Offline Review: fetch branch into local to test offline (optional)
+            Go to Github --> Pull Request --> Copy feature_branch name
+            Run command:
+                git fetch origin <copied_feature_branch>
+            User B can checkout to that branch, even though that branch doesn't exist on B's computer
+            (use 'git branch' to check)
+                git checkout <copied_feature_branch>
+            After reviewing, B can merge locally by 
+                git checkout master
+                git merge <copied_feature_branch>
+                git push
+            Then, pull request will be shown 'Merged' on github
+
+    Download merged files to any users's computer (A, B, C, ...):
+        git pull
