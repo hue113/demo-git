@@ -128,6 +128,18 @@ Part B: WORKING IN TEAM (more than 1 people working in the same project)
     What A needs to do:
         Create and Checkout to a new branch:
             git checkout -b <feature_branch>
-        Then, to push to git from that branch:
+        Work on his own feature_branch.
+        Then, to push to git from a branch:
             git push origin <branch_name>
+
+13-Pull request
+    In lesson12, A pushed feature_branch to github
+    Now, A will Create Pull Request on github.com for B to see/review the code
+        (Pull Request status changes to Open)
+    
+    What B will do?
+        Review code changes on github: 
+            clicking Pull Request tab --> Files Changed tab
+            add review/comment if neccessary
+        Merge to master
 
