@@ -162,3 +162,28 @@ Part B: WORKING IN TEAM (more than 1 people working in the same project)
 
     Download merged files to any users's computer (A, B, C, ...):
         git pull
+
+
+15-Resolve conflicts
+When can conflicts happen?
+    User X, Y both checkout from master and work on their own branch: feature-X/horse-run & feature-Y/horse-jump.
+    After finishing, X & Y push to repo & create pull request
+    master now has 2 pull request (from X & Y)
+    master merge 1st pull request, whether X or Y, still no problem in merging
+        Eg: 1st merge:  merge horse-jump --> successful
+            2nd merge:  merge horse-run --> conflict!
+
+    Then, there are two scenario that conflicts arise:
+        Scenario 1: X, Y change the same file, the same line
+        Scenario 2: X delete a file, but Y only modify that file
+    
+How to resolve conflicts?
+    Method 1:
+        1. Use 'git rebase'
+        2. Resolve conflicts
+        3. Forced Push again with -f
+
+    Method 2:
+        1. Merge updated master to feature_branch
+        2. Resolve conflicts
+        3. Commit and push
