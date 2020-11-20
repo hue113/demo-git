@@ -190,3 +190,9 @@ How to resolve conflicts?
         1. Merge updated master to feature_branch
         2. Resolve conflicts
         3. Commit and push
+
+
+
+
+
+git hash-object -w <file_name>
