@@ -68,7 +68,10 @@ PART A: WORKING IN INDIVIDUAL
         git merge B         (From A: merge B to A)
 
     Delete a branch (should keep Working Tree clean)
-        git branch -D <branch-name>
+        git branch -d <branch-name>                     (local)
+        git branch -D <branch-name>                     (local)
+        git push origin --delete <branch-name>          (remote)
+
 
 
 06-git reset
